@@ -1,0 +1,23 @@
+{
+  "name": "hnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eudangeld/hello-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eudangeld/hello-node/issues"
+  },
+  "homepage": "https://github.com/eudangeld/hello-node#readme",
+  "dependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

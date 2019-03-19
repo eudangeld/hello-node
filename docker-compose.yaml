@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  redis:
+    image: 'bitnami/redis:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - '6379:6379'
+  swoole:
+    container_name: siler_swoole
+    image: leocavalcante/dwoole:1.0-development
+    ports:
+      - '9501:9501'
+    volumes:
+      - ./:/app
+    links:
+      - redis
+
